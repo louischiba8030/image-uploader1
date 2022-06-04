@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+	<title>test blob image</title>
+</head>
+<body>
+	<main>
+		<div>
+			<%= blogPosts.name %>
+			<%= blogPosts.desc %>
+			<img src="data:image/png;base64,<%=blogPosts.img.data.toString('base64')%>" alt="">
+		</div>
+	</main>
+</body>
+</html>

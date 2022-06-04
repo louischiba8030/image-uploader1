@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+	<title>dddd</title>
+</head>
+<body>
+	<div>
+	<% blogPosts.forEach((post) => { %>
+		<h3><%= post.name %></h3>
+		<p><%= post.desc %></p>
+		<img class="post-img-preview" src="data:image/png;base64,<%= post.img.data %>" alt="" >
+	<% }); %>
+	</div>
+</body>
+</html>
